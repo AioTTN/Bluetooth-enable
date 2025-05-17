@@ -1,0 +1,10 @@
+sudo apt install blueman -y
+sudo systemctl enable bluetooth.service
+
+nano ~/start-bluetooth.sh
+#!/bin/bash
+pkexec systemctl start bluetooth.service
+chmod +x ~/start-bluetooth.sh
+
+
+Thanks For Reading
